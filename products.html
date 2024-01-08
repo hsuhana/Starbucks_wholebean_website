@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>STARBUCKS</title>
+		<meta name="author" content="Kaori Kuura, Fang Ting HSU" />
+		<meta name="description" content="A website for selling coffee beans">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="image/StarbucksLogo.svg" type="image/svg" sizes="10x10"/>
+		<link rel="stylesheet" href="css/style.css" />
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sumana:wght@700&display=swap" rel="stylesheet">
+	</head>
+    <body>
+        <section class="section-nav">
+            <div class="nav-container nav-grid-x">
+                <a class="navbar-link" href="index.html">HOME</a>
+                <a class="navbar-link" id="products" href="products.html">PRODUCTS</a>
+                <a>
+                    <img src="image/StarbucksLogo.svg" alt="logo">
+                </a>
+                <a class="navbar-link" href="about.html">ABOUT</a>
+                <a class="navbar-link" href="contact.html">CONTACT</a>
+            </div>
+            <div class="video-container title-grid-x">
+                <div class="title products"><h1>PRODUCTS</h1></div>
+                <div class="video-color-overlay"></div>
+                <video autoplay loop muted>
+                    <source src="./video/videoForProducts.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section>
+            <div class="slogan-whole-part">
+                <div class="slogan-grid-x">
+                    <h2 class="slogan-head">STARBUCKS<sup>&#174</sup> COFFEE. MAKE IT YOURS AT HOME.</h2>
+                    <p class="slogan-body">Discover our Starbucks<sup>&#174</sup>  coffee made truly yours at home. Enjoy a fresh cup of 100% Arabica coffee or a café inspired classic, whenever and however you like it.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="products-slideshow-whole-part">
+                <div class="products-slideshow-grid-x">
+                    <div class="products-slideshow-container animateForProduct">
+                        <div class="products-image-container"><img src="image/productImage1.png" alt="productImage1"></div>
+                    </div>             
+                    <div class="products-slideshow-container animateForProduct">
+                        <div class="products-image-container"><img src="image/productImage2.png" alt="productImage2"></div>
+                    </div>
+                    <div class="products-slideshow-container animateForProduct">
+                        <div class="products-image-container"><img src="image/productImage3.png" alt="productImage3"></div>
+                    </div>
+                    <div class="products-slideshow-container animateForProduct">
+                        <div class="products-image-container"><img src="image/productImage4.png" alt="productImage4"></div>
+                    </div>
+                    <div class="products-slideshow-container animateForProduct">
+                        <div class="products-image-container"><img src="image/productImage5.png" alt="productImage5"></div>
+                    </div>
+                    <div class="products-slideshow-container animateForProduct">
+                        <div class="products-image-container"><img src="image/productImage6.png" alt="productImage6"></div>
+                    </div>              
+                    <div class="button-container">
+                        <button id="productsbutton1" onclick="plusDivs(-1)">&#10094</button>
+                        <button id="productsbutton2" onclick="plusDivs(+1)">&#10095</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="products-container">
+                <!--first product-->
+                <div class="div-For-Products-Slideshow animate-for-product-text">
+                <div class="products-grid-x">
+                    <div class="products-text-container">
+                        <h2>Starbucks<sup>&#174</sup>  Caffè Verona<sup>&#174</sup></h2>
+                        <div class="products-detail-preview-text" id="preview-text-1">
+                            <p>Content 907 g</p>
+                            <p>Dark Roast Whole Bean Coffee</p>
+                            <p>Dark Cocoa and Caramelized Sugar</p>
+                            <p>A passion for the culinary romance of Italy inspired this seductive, full-bodied blend of Latin American and Asia/Pacific coffees, with Italian Roast added for depth. It’s rich and well-balanced with a dark cocoa texture and a roasty sweetness.</p>
+                        </div>
+                        <div class="products-detail-nutrition-text" id="nutrition-text-1">
+                            <div class="products-detail-nutrition-tbody">
+                                <div class="tdody-cell"><br></div>
+                                <div class="tdody-cell">Per serve</div>
+                                <div class="tdody-cell">Daily Value*</div>
+                            </div>
+                            <div class="products-detail-nutrition-tbody">
+                                <div class="tdody-cell">Calories</div>
+                                <div class="tdody-cell">5 cal</div>
+                                <div class="tdody-cell"><br></div>
+                            </div>
+                            <div class="products-detail-nutrition-tbody">
+                                <div class="tdody-cell">Fat</div>
+                                <div class="tdody-cell">0 g</div>
+                                <div class="tdody-cell">0%</div>
+                            </div>
+                            <div class="products-detail-nutrition-tbody">
+                                <div class="tdody-cell">Carbohydrate</div>
+                                <div class="tdody-cell">1 g</div>
+                                <div class="tdody-cell"><br></div>
+                            </div>
+                            <div class="products-detail-nutrition-tbody">
+                                <div class="tdody-cell">Protein</div>
+                                <div class="tdody-cell">1 g</div>
+                                <div class="tdody-cell"><br></div>
+                            </div>
+                            <div class="products-detail-nutrition-tbody">
+                                <div class="tdody-cell">Potassium</div>
+                                <div class="tdody-cell">250 mg</div>
+                                <div class="tdody-cell">5%</div>
+                            </div>
+                            <div class="products-detail-nutrition-mark">
+                                <p>Not a significant source of saturated fat, trans fat, fibre, sugars, cholesterol, sodium, calcium, or iron.</p>
+                                <p>*5% or less is little, 15% or more is a lot.</p>
+                            </div>
+                        </div>
+                        <div class="products-detail-recommend-text" id="recommend-text-1">
+                            <p>BREW GREAT COFFEE</p>
+                            <P>Preparation: Grind beans for your desired brewing method. 10g Starbucks<sup>&#174</sup>  ground coffee plus 180ml water makes 1 cup of coffee.
+                                For the best taste and freshest flavour, always use clean, filtered water; clean your machine before using; and grind beans just before brewing.</P>
+                        </div>
+                        <div class="proudcts-icon-container">
+                            <a id="preview1" href=""><img class="product-detail-icon" id="product-detail-preview-icon1" src="image/product_detail_icon_review.svg" alt="products review icon"/></a>
+                            <a id="nutrition1" href=""><img class="product-detail-icon" id="product-detail-nutrition-icon1" src="image/product_detail_nutrition.png" alt="products nutrition icon"/></a>
+                            <a id="recommend1" href=""><img class="product-detail-icon" id="product-detail-recommend-icon1" src="image/product_detail_recommend.png" alt="products recommend icon"/></a>
+                        </div>
+                    </div>
+                    <div class="products-detail-image-container">
+                        <img src="image/blackCoffee1.jpg" alt="black coffee image"/>
+                    </div>
+                </div>
+                </div>
+                <!--second product-->
+                <div class="div-For-Products-Slideshow animate-for-product-text">
+                <div class="products-grid-x">
+                    <div class="products-text-container">
+                        <h2>Starbucks<sup>&#174</sup> French Roast</h2>
+                        <div class="products-detail-preview-text" id="preview-text-2">
+                            <p>Content 340 g</p>
+                            <p>Dark Roast Whole Bean Coffee</p>
+                            <p>Intense & Smokey</p>
+                            <p>This is no ordinary brew – it’s roasted to an ebony colour, so every cup is powerfully smoky, straightforward and surprisingly light-bodied with low-acidity.</p>
+                        </div>
+                        <div class="products-detail-nutrition-text" id="nutrition-text-2">
+                            <div class="products-detail-nutrition-tbody">
+                                <div class="tdody-cell"><br></div>
+                                <div class="tdody-cell">Per serve</div>
+                                <div class="tdody-cell">Daily Value*</div>
+                            </div>
+                            <div class="products-detail-nutrition-tbody">
+                                <div class="tdody-cell">Calories</div>
+                                <div class="tdody-cell">5 cal</div>
+                                <div class="tdody-cell"><br></div>
+                            </div>
+                            <div class="products-detail-nutrition-tbody">
+                                <div class="tdody-cell">Fat</div>
+                                <div class="tdody-cell">0 g</div>
+                                <div class="tdody-cell">0%</div>
+                            </div>
+                            <div class="products-detail-nutrition-tbody">
+                                <div class="tdody-cell">Carbohydrate</div>
+                                <div class="tdody-cell">1 g</div>
+                                <div class="tdody-cell"><br></div>
+                            </div>
+                            <div class="products-detail-nutrition-tbody">
+                                <div class="tdody-cell">Protein</div>
+                                <div class="tdody-cell">1 g</div>
+                                <div class="tdody-cell"><br></div>
+                            </div>
+                            <div class="products-detail-nutrition-tbody">
+                                <div class="tdody-cell">Potassium</div>
+                                <div class="tdody-cell">250 mg</div>
+                                <div class="tdody-cell">5%</div>
+                            </div>
+                            <div class="products-detail-nutrition-mark">
+                                <p>Not a significant source of saturated fat, trans fat, fibre, sugars, cholesterol, sodium, calcium, or iron.</p>
+                                <p>*5% or less is little, 15% or more is a lot.</p>
+                            </div>
+                        </div>
+                        <div class="products-detail-recommend-text" id="recommend-text-2">
+                            <p>BREW GREAT COFFEE</p>
+                            <P>Designed for use with the KEURIG Single Cup Brewing System. It's easy to brew the perfect cup: Use 8-oz. setting on your coffee maker. Press the Brew button. Add milk or sugar, or enjoy as is. Store unused pods at room temperature.</P>
+                        </div>
+                        <div class="proudcts-icon-container">
+                            <a id="preview2" href=""><img class="product-detail-icon" id="product-detail-preview-icon2" src="image/product_detail_icon_review.svg" alt="products review icon"/></a>
+                            <a id="nutrition2" href=""><img class="product-detail-icon" id="product-detail-nutrition-icon2" src="image/product_detail_nutrition.png" alt="products nutrition icon"/></a>
+                            <a id="recommend2" href=""><img class="product-detail-icon" id="product-detail-recommend-icon2" src="image/product_detail_recommend.png" alt="products recommend icon"/></a>
+                        </div>
+                    </div>
+                    <div class="products-detail-image-container">
+                        <img src="image/drink1.jpg" alt="drink1 image"/>
+                    </div>
+                </div>
+                </div>
+                <!--third product-->
+                <div class="div-For-Products-Slideshow animate-for-product-text">
+                    <div class="products-grid-x">
+                        <div class="products-text-container">
+                            <h2>Starbucks<sup>&#174</sup> House Blend</h2>
+                            <div class="products-detail-preview-text" id="preview-text-3">
+                                <p>Content 340 g</p>
+                                <p>Medium Roast Whole Bean Coffee</p>
+                                <p>Rich & Lively</p>
+                                <p>It’s deceptively simple – a blend with fine Latin American beans roasted to a glistening, dark chestnut colour. Loaded with flavour, balancing tastes of nut and cocoa, just a touch of sweetness from the roast.</p>
+                            </div>
+                            <div class="products-detail-nutrition-text" id="nutrition-text-3">
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell"><br></div>
+                                    <div class="tdody-cell">Per serve</div>
+                                    <div class="tdody-cell">Daily Value*</div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Calories</div>
+                                    <div class="tdody-cell">5 cal</div>
+                                    <div class="tdody-cell"><br></div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Fat</div>
+                                    <div class="tdody-cell">0 g</div>
+                                    <div class="tdody-cell">0%</div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Carbohydrate</div>
+                                    <div class="tdody-cell">1 g</div>
+                                    <div class="tdody-cell"><br></div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Protein</div>
+                                    <div class="tdody-cell">1 g</div>
+                                    <div class="tdody-cell"><br></div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Potassium</div>
+                                    <div class="tdody-cell">250 mg</div>
+                                    <div class="tdody-cell">5%</div>
+                                </div>
+                                <div class="products-detail-nutrition-mark">
+                                    <p>Not a significant source of saturated fat, trans fat, fibre, sugars, cholesterol, sodium, calcium, or iron.</p>
+                                    <p>*5% or less is little, 15% or more is a lot.</p>
+                                </div>
+                            </div>
+                            <div class="products-detail-recommend-text" id="recommend-text-3">
+                                <p>BREW GREAT COFFEE</p>
+                                <P>Preparation: Grind beans for your desired brewing method. 10g Starbucks<sup>&#174</sup>  ground coffee plus 180ml water makes 1 cup of coffee.
+                                    For the best taste and freshest flavour, always use clean, filtered water; clean your machine before using; and grind beans just before brewing.</P>
+                            </div>
+                            <div class="proudcts-icon-container">
+                                <a id="preview3" href=""><img class="product-detail-icon" id="product-detail-preview-icon3" src="image/product_detail_icon_review.svg" alt="products review icon"/></a>
+                                <a id="nutrition3" href=""><img class="product-detail-icon" id="product-detail-nutrition-icon3" src="image/product_detail_nutrition.png" alt="products nutrition icon"/></a>
+                                <a id="recommend3" href=""><img class="product-detail-icon" id="product-detail-recommend-icon3" src="image/product_detail_recommend.png" alt="products recommend icon"/></a>
+                            </div>
+                        </div>
+                        <div class="products-detail-image-container">
+                            <img src="image/drink2.jpg" alt="drink1 image"/>
+                        </div>
+                    </div>
+                </div>
+                <!--fourth product-->
+                <div class="div-For-Products-Slideshow animate-for-product-text">
+                    <div class="products-grid-x">
+                        <div class="products-text-container">
+                            <h2>Starbucks<sup>&#174</sup> Pike Place<sup>&#174</sup> Roast</h2>
+                            <div class="products-detail-preview-text" id="preview-text-4">
+                                <p>Content 907 g</p>
+                                <p>Medium Roast Whole Bean Coffee</p>
+                                <p>Chocolate & Toasted Nut Notes</p>
+                                <p>A well-rounded blend of 100% Arabica, Latin American beans with subtle, rich flavours of chocolate and toasted nuts.</p>
+                            </div>
+                            <div class="products-detail-nutrition-text" id="nutrition-text-4">
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell"><br></div>
+                                    <div class="tdody-cell">Per serve</div>
+                                    <div class="tdody-cell">Daily Value*</div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Calories</div>
+                                    <div class="tdody-cell">5 cal</div>
+                                    <div class="tdody-cell"><br></div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Fat</div>
+                                    <div class="tdody-cell">0 g</div>
+                                    <div class="tdody-cell">0%</div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Carbohydrate</div>
+                                    <div class="tdody-cell">1 g</div>
+                                    <div class="tdody-cell"><br></div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Protein</div>
+                                    <div class="tdody-cell">1 g</div>
+                                    <div class="tdody-cell"><br></div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Potassium</div>
+                                    <div class="tdody-cell">250 mg</div>
+                                    <div class="tdody-cell">5%</div>
+                                </div>
+                                <div class="products-detail-nutrition-mark">
+                                    <p>Not a significant source of saturated fat, trans fat, fibre, sugars, cholesterol, sodium, calcium, or iron.</p>
+                                    <p>*5% or less is little, 15% or more is a lot.</p>
+                                </div>
+                            </div>
+                            <div class="products-detail-recommend-text" id="recommend-text-4">
+                                <p>BREW GREAT COFFEE</p>
+                                <P>Preparation: Grind beans for your desired brewing method. 10g Starbucks<sup>&#174</sup>  ground coffee plus 180ml water makes 1 cup of coffee.
+                                    For the best taste and freshest flavour, always use clean, filtered water; clean your machine before using; and grind beans just before brewing.</P>
+                            </div>
+                            <div class="proudcts-icon-container">
+                                <a id="preview4" href=""><img class="product-detail-icon" id="product-detail-preview-icon4" src="image/product_detail_icon_review.svg" alt="products review icon"/></a>
+                                <a id="nutrition4" href=""><img class="product-detail-icon" id="product-detail-nutrition-icon4" src="image/product_detail_nutrition.png" alt="products nutrition icon"/></a>
+                                <a id="recommend4" href=""><img class="product-detail-icon" id="product-detail-recommend-icon4" src="image/product_detail_recommend.png" alt="products recommend icon"/></a>
+                            </div>
+                        </div>
+                        <div class="products-detail-image-container">
+                            <img src="image/drink3.jpg" alt="drink1 image"/>
+                        </div>
+                    </div>
+                </div>
+                <!--fifth product-->
+                <div class="div-For-Products-Slideshow animate-for-product-text">
+                    <div class="products-grid-x">
+                        <div class="products-text-container">
+                            <h2>Starbucks<sup>&#174</sup> Espresso Roast</h2>
+                            <div class="products-detail-preview-text" id="preview-text-5">
+                                <p>Content 907 g</p>
+                                <p>Dark Roast Whole Bean Coffee</p>
+                                <p>Rich & Caramelly</p>
+                                <p>Rich and bold, this dark roast has flavour notes of caramelly sweetness and molasses that can be perfectly accompanied with steamed milk.</p>
+                            </div>
+                            <div class="products-detail-nutrition-text" id="nutrition-text-5">
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell"><br></div>
+                                    <div class="tdody-cell">Per serve</div>
+                                    <div class="tdody-cell">Daily Value*</div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Calories</div>
+                                    <div class="tdody-cell">5 cal</div>
+                                    <div class="tdody-cell"><br></div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Fat</div>
+                                    <div class="tdody-cell">0 g</div>
+                                    <div class="tdody-cell">0%</div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Carbohydrate</div>
+                                    <div class="tdody-cell">1 g</div>
+                                    <div class="tdody-cell"><br></div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Protein</div>
+                                    <div class="tdody-cell">1 g</div>
+                                    <div class="tdody-cell"><br></div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Potassium</div>
+                                    <div class="tdody-cell">250 mg</div>
+                                    <div class="tdody-cell">5%</div>
+                                </div>
+                                <div class="products-detail-nutrition-mark">
+                                    <p>Not a significant source of saturated fat, trans fat, fibre, sugars, cholesterol, sodium, calcium, or iron.</p>
+                                    <p>*5% or less is little, 15% or more is a lot.</p>
+                                </div>
+                            </div>
+                            <div class="products-detail-recommend-text" id="recommend-text-5">
+                                <p>BREW GREAT COFFEE</p>
+                                <P>Preparation: Grind beans for your desired brewing method. 10g Starbucks<sup>&#174</sup>  ground coffee plus 180ml water makes 1 cup of coffee.
+                                    For the best taste and freshest flavour, always use clean, filtered water; clean your machine before using; and grind beans just before brewing.</P>
+                            </div>
+                            <div class="proudcts-icon-container">
+                                <a id="preview5" href=""><img class="product-detail-icon" id="product-detail-preview-icon5" src="image/product_detail_icon_review.svg" alt="products review icon"/></a>
+                                <a id="nutrition5" href=""><img class="product-detail-icon" id="product-detail-nutrition-icon5" src="image/product_detail_nutrition.png" alt="products nutrition icon"/></a>
+                                <a id="recommend5" href=""><img class="product-detail-icon" id="product-detail-recommend-icon5" src="image/product_detail_recommend.png" alt="products recommend icon"/></a>
+                            </div>
+                        </div>
+                        <div class="products-detail-image-container">
+                            <img src="image/drink4.jpg" alt="drink1 image"/>
+                        </div>
+                    </div>
+                </div>
+                <!--sixth product-->
+                <div class="div-For-Products-Slideshow animate-for-product-text">
+                    <div class="products-grid-x">
+                        <div class="products-text-container">
+                            <h2>Starbucks<sup>&#174</sup> Breakfast Blend</h2>
+                            <div class="products-detail-preview-text" id="preview-text-6">
+                                <p>Content 340 g</p>
+                                <p>Medium Roast Whole Bean Coffee</p>
+                                <p>Bright & Tangy</p>
+                                <p>A shade lighter than most of our offerings—more toasty than roasty—it's perfect if you want to wake up to a less intense coffee but still want a lot of character.</p>
+                            </div>
+                            <div class="products-detail-nutrition-text" id="nutrition-text-6">
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell"><br></div>
+                                    <div class="tdody-cell">Per serve</div>
+                                    <div class="tdody-cell">Daily Value*</div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Calories</div>
+                                    <div class="tdody-cell">5 cal</div>
+                                    <div class="tdody-cell"><br></div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Fat</div>
+                                    <div class="tdody-cell">0 g</div>
+                                    <div class="tdody-cell">0%</div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Carbohydrate</div>
+                                    <div class="tdody-cell">1 g</div>
+                                    <div class="tdody-cell"><br></div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Protein</div>
+                                    <div class="tdody-cell">1 g</div>
+                                    <div class="tdody-cell"><br></div>
+                                </div>
+                                <div class="products-detail-nutrition-tbody">
+                                    <div class="tdody-cell">Potassium</div>
+                                    <div class="tdody-cell">250 mg</div>
+                                    <div class="tdody-cell">5%</div>
+                                </div>
+                                <div class="products-detail-nutrition-mark">
+                                    <p>Not a significant source of saturated fat, trans fat, fibre, sugars, cholesterol, sodium, calcium, or iron.</p>
+                                    <p>*5% or less is little, 15% or more is a lot.</p>
+                                </div>
+                            </div>
+                            <div class="products-detail-recommend-text" id="recommend-text-6">
+                                <p>BREW GREAT COFFEE</p>
+                                <P>Preparation: Grind beans for your desired brewing method. 10g Starbucks<sup>&#174</sup>  ground coffee plus 180ml water makes 1 cup of coffee.
+                                    For the best taste and freshest flavour, always use clean, filtered water; clean your machine before using; and grind beans just before brewing.</P>
+                            </div>
+                            <div class="proudcts-icon-container">
+                                <a id="preview6" href=""><img class="product-detail-icon" id="product-detail-preview-icon6" src="image/product_detail_icon_review.svg" alt="products review icon"/></a>
+                                <a id="nutrition6" href=""><img class="product-detail-icon" id="product-detail-nutrition-icon6" src="image/product_detail_nutrition.png" alt="products nutrition icon"/></a>
+                                <a id="recommend6" href=""><img class="product-detail-icon" id="product-detail-recommend-icon6" src="image/product_detail_recommend.png" alt="products recommend icon"/></a>
+                            </div>
+                        </div>
+                        <div class="products-detail-image-container">
+                            <img src="image/drink5.jpg" alt="drink1 image"/>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <section class="footer-grid-x">
+            <div class="footer-container">
+                <h3>STARBUCKS<sup>&#174</sup> COFFEE BEANS</h3>
+                <ul>
+                    <li><a href="#">COOKIE NOTICE</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">TERM OF USE</a></li>
+                    <li><a href="#">STARBUCKS.CA</a></li>
+                </ul> 
+                <P>
+					Nestlé uses Starbucks trademarks under license. Nespresso<sup>&#174</sup> and Vertuo<sup>&#174</sup> trademarks are owned by Société des Produits Nestlé S.A., Vevey, Switzerland and used under license. Pike Place is a registered trademark of The Pike Place Market PDA, used under license.                                
+                </P>
+            </div>
+        </section>
+
+        <script>
+            /*slide show function for display all products*/
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            var slideTextIndex = 1;
+            showTextDivs(slideTextIndex);
+            
+
+            function plusDivs(n) {
+            showDivs(slideIndex += n);
+            showTextDivs(slideTextIndex += n);
+            console.log(slideIndex);
+            console.log(slideTextIndex);
+            }
+
+            function showDivs(n) {
+            var i;
+            var slides = document.getElementsByClassName("products-slideshow-container");
+            var fadeEffect = document.getElementsByClassName("animateForProduct");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (i = 0; i < fadeEffect.length; i++) {
+                fadeEffect[i].style.animationName = "none";
+            }
+
+            fadeEffect[slideIndex - 1].style.animationName = "fade";
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+            }
+            
+            function showTextDivs(n) {
+                var i;
+                var slidesText = document.getElementsByClassName("div-For-Products-Slideshow");
+                var animateText = document.getElementsByClassName("animate-for-product-text");
+                if (n > slidesText.length) {
+                    slideTextIndex = 1;
+                }
+                if (n < 1) {
+                    slideTextIndex = slidesText.length;
+                }
+
+                for (i = 0; i < animateText.length; i++) {
+                    animateText[i].style.animationName = "none";
+                }
+    
+                animateText[slideIndex - 1].style.animationName = "leftIn";
+
+                for (i = 0; i < slidesText.length; i++) {
+                    slidesText[i].style.display = "none";
+                }
+                slidesText[slideTextIndex - 1].style.display = "block";
+                }
+            
+
+            /*use icon to change content function*/
+            /*first product*/
+            var getNutritionID1 = document.getElementById("nutrition1");
+            var getPreviewID1 = document.getElementById("preview1");
+            var getRecommendID1 = document.getElementById("recommend1");
+
+            var getNutritionText1 = document.getElementById("nutrition-text-1");
+            var getPreviewText1 = document.getElementById("preview-text-1");
+            var getRecommendText1 = document.getElementById("recommend-text-1");
+
+            var getNutritionBr1 = document.getElementById("product-detail-nutrition-icon1");
+            var getPreviewBr1 = document.getElementById("product-detail-preview-icon1");
+            var getRecommendBr1 = document.getElementById("product-detail-recommend-icon1");
+
+            getNutritionID1.addEventListener('click', function(event){
+                event.preventDefault();
+                getNutritionText1.style.display = "block";
+                getPreviewText1.style.display = "none";
+                getRecommendText1.style.display = "none";
+                getNutritionBr1.style.borderColor = "#8DB8AC";
+                getPreviewBr1.style.borderColor = "black";
+                getRecommendBr1.style.borderColor = "black";
+            })
+
+            getPreviewID1.addEventListener('click', function(event){
+                event.preventDefault();
+                getPreviewText1.style.display = "block";
+                getNutritionText1.style.display = "none";
+                getRecommendText1.style.display = "none";
+                getNutritionBr1.style.borderColor = "black";
+                getPreviewBr1.style.borderColor = "#8DB8AC";
+                getRecommendBr1.style.borderColor = "black";
+            })
+
+            getRecommendID1.addEventListener('click', function(event){
+                event.preventDefault();
+                getRecommendText1.style.display = "block";
+                getNutritionText1.style.display = "none";
+                getPreviewText1.style.display = "none";
+                getNutritionBr1.style.borderColor = "black";
+                getPreviewBr1.style.borderColor = "black";
+                getRecommendBr1.style.borderColor = "#8DB8AC";
+            })
+
+            /*second product*/
+            var getNutritionID2 = document.getElementById("nutrition2");
+            var getPreviewID2 = document.getElementById("preview2");
+            var getRecommendID2 = document.getElementById("recommend2");
+
+            var getNutritionText2 = document.getElementById("nutrition-text-2");
+            var getPreviewText2 = document.getElementById("preview-text-2");
+            var getRecommendText2 = document.getElementById("recommend-text-2");
+
+            var getNutritionBr2 = document.getElementById("product-detail-nutrition-icon2");
+            var getPreviewBr2 = document.getElementById("product-detail-preview-icon2");
+            var getRecommendBr2 = document.getElementById("product-detail-recommend-icon2");
+
+            getNutritionID2.addEventListener('click', function(event){
+                event.preventDefault();
+                getNutritionText2.style.display = "block";
+                getPreviewText2.style.display = "none";
+                getRecommendText2.style.display = "none";
+                getNutritionBr2.style.borderColor = "#8DB8AC";
+                getPreviewBr2.style.borderColor = "black";
+                getRecommendBr2.style.borderColor = "black";
+            })
+
+            getPreviewID2.addEventListener('click', function(event){
+                event.preventDefault();
+                getPreviewText2.style.display = "block";
+                getNutritionText2.style.display = "none";
+                getRecommendText2.style.display = "none";
+                getNutritionBr2.style.borderColor = "black";
+                getPreviewBr2.style.borderColor = "#8DB8AC";
+                getRecommendBr2.style.borderColor = "black";
+            })
+
+            getRecommendID2.addEventListener('click', function(event){
+                event.preventDefault();
+                getRecommendText2.style.display = "block";
+                getNutritionText2.style.display = "none";
+                getPreviewText2.style.display = "none";
+                getNutritionBr2.style.borderColor = "black";
+                getPreviewBr2.style.borderColor = "black";
+                getRecommendBr2.style.borderColor = "#8DB8AC";
+            })
+
+            /*third product*/
+            var getNutritionID3 = document.getElementById("nutrition3");
+            var getPreviewID3 = document.getElementById("preview3");
+            var getRecommendID3 = document.getElementById("recommend3");
+
+            var getNutritionText3 = document.getElementById("nutrition-text-3");
+            var getPreviewText3 = document.getElementById("preview-text-3");
+            var getRecommendText3 = document.getElementById("recommend-text-3");
+
+            var getNutritionBr3 = document.getElementById("product-detail-nutrition-icon3");
+            var getPreviewBr3 = document.getElementById("product-detail-preview-icon3");
+            var getRecommendBr3 = document.getElementById("product-detail-recommend-icon3");
+
+            getNutritionID3.addEventListener('click', function(event){
+                event.preventDefault();
+                getNutritionText3.style.display = "block";
+                getPreviewText3.style.display = "none";
+                getRecommendText3.style.display = "none";
+                getNutritionBr3.style.borderColor = "#8DB8AC";
+                getPreviewBr3.style.borderColor = "black";
+                getRecommendBr3.style.borderColor = "black";
+            })
+
+            getPreviewID3.addEventListener('click', function(event){
+                event.preventDefault();
+                getPreviewText3.style.display = "block";
+                getNutritionText3.style.display = "none";
+                getRecommendText3.style.display = "none";
+                getNutritionBr3.style.borderColor = "black";
+                getPreviewBr3.style.borderColor = "#8DB8AC";
+                getRecommendBr3.style.borderColor = "black";
+                
+            })
+
+            getRecommendID3.addEventListener('click', function(event){
+                event.preventDefault();
+                getRecommendText3.style.display = "block";
+                getNutritionText3.style.display = "none";
+                getPreviewText3.style.display = "none";
+                getNutritionBr3.style.borderColor = "black";
+                getPreviewBr3.style.borderColor = "black";
+                getRecommendBr3.style.borderColor = "#8DB8AC";
+            })
+
+            /*fourth product*/
+            var getNutritionID4 = document.getElementById("nutrition4");
+            var getPreviewID4 = document.getElementById("preview4");
+            var getRecommendID4 = document.getElementById("recommend4");
+
+            var getNutritionText4 = document.getElementById("nutrition-text-4");
+            var getPreviewText4 = document.getElementById("preview-text-4");
+            var getRecommendText4 = document.getElementById("recommend-text-4");
+
+            var getNutritionBr4 = document.getElementById("product-detail-nutrition-icon4");
+            var getPreviewBr4 = document.getElementById("product-detail-preview-icon4");
+            var getRecommendBr4 = document.getElementById("product-detail-recommend-icon4");
+
+            getNutritionID4.addEventListener('click', function(event){
+                event.preventDefault();
+                getNutritionText4.style.display = "block";
+                getPreviewText4.style.display = "none";
+                getRecommendText4.style.display = "none";
+                getNutritionBr4.style.borderColor = "#8DB8AC";
+                getPreviewBr4.style.borderColor = "black";
+                getRecommendBr4.style.borderColor = "black";
+            })
+
+            getPreviewID4.addEventListener('click', function(event){
+                event.preventDefault();
+                getPreviewText4.style.display = "block";
+                getNutritionText4.style.display = "none";
+                getRecommendText4.style.display = "none";
+                getNutritionBr4.style.borderColor = "black";
+                getPreviewBr4.style.borderColor = "#8DB8AC";
+                getRecommendBr4.style.borderColor = "black";
+            })
+
+            getRecommendID4.addEventListener('click', function(event){
+                event.preventDefault();
+                getRecommendText4.style.display = "block";
+                getNutritionText4.style.display = "none";
+                getPreviewText4.style.display = "none";
+                getNutritionBr4.style.borderColor = "black";
+                getPreviewBr4.style.borderColor = "black";
+                getRecommendBr4.style.borderColor = "#8DB8AC";
+            })
+
+            /*fifth product*/
+            var getNutritionID5 = document.getElementById("nutrition5");
+            var getPreviewID5 = document.getElementById("preview5");
+            var getRecommendID5 = document.getElementById("recommend5");
+
+            var getNutritionText5 = document.getElementById("nutrition-text-5");
+            var getPreviewText5 = document.getElementById("preview-text-5");
+            var getRecommendText5 = document.getElementById("recommend-text-5");
+
+            var getNutritionBr5 = document.getElementById("product-detail-nutrition-icon5");
+            var getPreviewBr5 = document.getElementById("product-detail-preview-icon5");
+            var getRecommendBr5 = document.getElementById("product-detail-recommend-icon5");
+
+            getNutritionID5.addEventListener('click', function(event){
+                event.preventDefault();
+                getNutritionText5.style.display = "block";
+                getPreviewText5.style.display = "none";
+                getRecommendText5.style.display = "none";
+                getNutritionBr5.style.borderColor = "#8DB8AC";
+                getPreviewBr5.style.borderColor = "black";
+                getRecommendBr5.style.borderColor = "black";
+            })
+
+            getPreviewID5.addEventListener('click', function(event){
+                event.preventDefault();
+                getPreviewText5.style.display = "block";
+                getNutritionText5.style.display = "none";
+                getRecommendText5.style.display = "none";
+                getNutritionBr5.style.borderColor = "black";
+                getPreviewBr5.style.borderColor = "#8DB8AC";
+                getRecommendBr5.style.borderColor = "black";
+            })
+
+            getRecommendID5.addEventListener('click', function(event){
+                event.preventDefault();
+                getRecommendText5.style.display = "block";
+                getNutritionText5.style.display = "none";
+                getPreviewText5.style.display = "none";
+                getNutritionBr5.style.borderColor = "black";
+                getPreviewBr5.style.borderColor = "black";
+                getRecommendBr5.style.borderColor = "#8DB8AC";
+            })
+
+            /*sixth product*/
+            var getNutritionID6 = document.getElementById("nutrition6");
+            var getPreviewID6 = document.getElementById("preview6");
+            var getRecommendID6 = document.getElementById("recommend6");
+
+            var getNutritionText6 = document.getElementById("nutrition-text-6");
+            var getPreviewText6 = document.getElementById("preview-text-6");
+            var getRecommendText6 = document.getElementById("recommend-text-6");
+
+            var getNutritionBr6 = document.getElementById("product-detail-nutrition-icon6");
+            var getPreviewBr6 = document.getElementById("product-detail-preview-icon6");
+            var getRecommendBr6 = document.getElementById("product-detail-recommend-icon6");
+
+            getNutritionID6.addEventListener('click', function(event){
+                event.preventDefault();
+                getNutritionText6.style.display = "block";
+                getPreviewText6.style.display = "none";
+                getRecommendText6.style.display = "none";
+                getNutritionBr6.style.borderColor = "#8DB8AC";
+                getPreviewBr6.style.borderColor = "black";
+                getRecommendBr6.style.borderColor = "black";
+            })
+
+            getPreviewID6.addEventListener('click', function(event){
+                event.preventDefault();
+                getPreviewText6.style.display = "block";
+                getNutritionText6.style.display = "none";
+                getRecommendText6.style.display = "none";
+                getNutritionBr6.style.borderColor = "black";
+                getPreviewBr6.style.borderColor = "#8DB8AC";
+                getRecommendBr6.style.borderColor = "black";
+            })
+
+            getRecommendID6.addEventListener('click', function(event){
+                event.preventDefault();
+                getRecommendText6.style.display = "block";
+                getNutritionText6.style.display = "none";
+                getPreviewText6.style.display = "none";
+                getNutritionBr6.style.borderColor = "black";
+                getPreviewBr6.style.borderColor = "black";
+                getRecommendBr6.style.borderColor = "#8DB8AC";
+            })
+
+            /*navbar change*/
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    var scroll = $(window).scrollTop();
+                    if (scroll > 100) {
+                      $(".nav-container").css("background" , "#8d7e7a7a");
+                      $(".navbar-link").css("color" , "#38241e");
+                      $("#products").css("color", "#6cffd8");
+                    }
+              
+                    else{
+                        $(".nav-container").css("background" , "#8d7e7a");
+                        $("a[href]").css("color" , "#cacaca");
+                        $("#products").css("color", "#6cffd8");  	
+                    }
+                })
+              })
+        </script>
+    </body>
+</html>

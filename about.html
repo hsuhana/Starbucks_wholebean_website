@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>STARBUCKS</title>
+		<meta name="author" content="Kaori Kuura, Fang Ting HSU" />
+		<meta name="description" content="A website for selling coffee beans">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="image/StarbucksLogo.svg" type="image/svg" sizes="10x10"/>
+		<link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caudex&family=Croissant+One&family=DM+Mono:wght@300&family=Kanit:wght@300&family=Montserrat+Alternates:wght@300&family=Poltawski+Nowy&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	</head>
+    <body>
+        <section class="section-nav">
+            <div class="nav-container nav-grid-x">
+                <a class="navbar-link" href="index.html">HOME</a>
+                <a class="navbar-link" href="products.html">PRODUCTS</a>
+                <a>
+                    <img src="image/StarbucksLogo.svg" alt="logo">
+                </a>
+                <a class="navbar-link" id="about" href="about.html">ABOUT</a>
+                <a class="navbar-link" href="contact.html">CONTACT</a>
+            </div>
+            <div class="video-container title-grid-x">
+                <div class="title about"><h1>ABOUT</h1></div>
+                <div class="video-color-overlay"></div>
+                <video autoplay loop muted>
+                    <source src="./video/videoForAbout.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section>
+            <div class="slogan-whole-part">
+                <div class="slogan-grid-x">
+                    <h2 class="slogan-head">THE STARBUCKS STORY</h2>
+                    <p class="slogan-body">Discover what makes Starbucks<sup>&#174</sup> unique, from our commitment to human connection and quality coffee, to our welcoming coffeehouses, and delicious coffees you can enjoy at home.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="store_pic_part">
+                <h2 class="store_subtitle">ABOUT STARBUCKS</h2>
+                <h1 class="store_title">Our Story Started in Seattle</h1>
+                <img class="store" src="image/view7.jpg" alt="store">
+            </div>
+        </section>
+        <section>
+            <div class="company-history-part">
+                <h5 class="history-subtitle">STARBUCKS HISTORY</h5>
+                <h1 class="history-title">Committed to connection</h1>
+                <p class="history-body">It happens millions of times each week – a customer receives a drink from a Starbucks® barista – but each interaction is unique.</p>
+                <p class="history-body">It’s just a moment in time – just one hand reaching over the counter to present a cup to another outstretched hand. But it’s a connection.</p>
+                <p class="history-body">At Starbucks®, we make sure everything we do honours that connection – from our commitment to the finest quality coffee, to the way we engage with our customers and communities to do business responsibly. 
+                   From Starbucks® beginnings as a single store, in every place we’ve been, and every place we touch, we’ve tried to make it a little better than we found it.
+                </p>
+                <h5 class="history-subtitle">WHEN WAS STARBUCKS FOUNDED?</h5>
+                <p class="history-body">When the first Starbucks® opened in 1971, the company was a single store in Seattle’s historic Pike Place Market. From just a narrow shop front, Starbucks offered some of the world’s finest fresh-roasted whole bean coffees. The name, inspired by Moby Dick, evoked the romance of the high seas and the seafaring tradition of the early coffee traders.</p>
+                <p class="history-body">In 1981, Howard Schultz (Starbucks® former chairman, president and chief executive officer) first walked into a Starbucks® store. From his first cup of Sumatra, Howard was drawn into Starbucks® and joined a year later.</p>
+                <p class="history-body">In 1983, Howard travelled to Italy and became captivated with Italian coffee bars and the romance of the coffee experience. He had a vision to bring the Italian coffeehouse tradition back to the United States. He wanted to create a place for conversation and a sense of community – a third place between work and home. He left the company for a short period of time to start his own Il Giornale coffeehouses and returned in August 1987 to purchase Starbucks® with the help of local investors.</p>
+            </div>
+        </section>
+        <section>
+            <div class="photo_hover">
+                <div class="sustainability">
+                    <h5 class="photo_hover_title1">SUSTAINABILITY</h5>
+                    <h1 class="photo_hover_title2">Coffee sustainability</h1>
+                    <img class="photo_hover_img" src="image/view2.jpg" alt="photo1">
+                </div>
+                <div class="lifestyle">
+                    <h5 class="photo_hover_title1">LIFESTYLE</h5>
+                    <h1 class="photo_hover_title2">How to enjoy coffee</h1>
+                    <img class="photo_hover_img" src="image/view4.jpg" alt="photo2">
+                </div>  
+                <div class="craft">
+                    <h5 class="photo_hover_title1">CRAFT</h5>
+                    <h1 class="photo_hover_title2">Blending & roasting</h1>
+                    <img class="photo_hover_img" src="image/view3.jpg" alt="photo3">
+                </div>      
+            </div>   
+        </section>
+        <section class="footer-grid-x">
+            <div class="footer-container">
+                <h3>STARBUCKS<sup>&#174</sup> COFFEE BEANS</h3>
+                <ul>
+                    <li><a href="#">COOKIE NOTICE</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">TERM OF USE</a></li>
+                    <li><a href="#">STARBUCKS.CA</a></li>
+                </ul> 
+                <P>
+					Nestlé uses Starbucks trademarks under license. Nespresso<sup>&#174</sup> and Vertuo<sup>&#174</sup> trademarks are owned by Société des Produits Nestlé S.A., Vevey, Switzerland and used under license. Pike Place is a registered trademark of The Pike Place Market PDA, used under license.                                
+                </P>
+            </div>
+        </section>
+        <script>
+            /*navbar change*/
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    var scroll = $(window).scrollTop();
+                    if (scroll > 100) {
+                      $(".nav-container").css("background" , "#8d7e7a7a");
+                      $(".navbar-link").css("color" , "#38241e");
+                      $("#about").css("color", "#6cffd8");
+                    }
+              
+                    else{
+                        $(".nav-container").css("background" , "#8d7e7a");
+                        $("a[href]").css("color" , "#cacaca");
+                        $("#about").css("color", "#6cffd8");  	
+                    }
+                })
+              })
+
+     
+            // scroll fade in image
+            window.addEventListener('scroll', function() {
+            
+            var image = document.querySelector('.store');
+            var imageContainer = document.querySelector('.store_pic_part');
+            var positionFromTop = imageContainer.getBoundingClientRect().top;
+
+            if (positionFromTop - window.innerHeight < 0) {
+                image.style.opacity = '1';
+            }
+            });
+
+        </script>
+    </body>
+</html>

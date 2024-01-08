@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>STARBUCKS</title>
+		<meta name="author" content="Kaori Kuura, Fang Ting HSU" />
+		<meta name="description" content="A website for selling coffee beans">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="image/StarbucksLogo.svg" type="image/svg" sizes="10x10"/>
+		<link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.cdnfonts.com/css/noto-sans-sc" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sumana:wght@700&display=swap" rel="stylesheet">
+	</head>
+    <body>
+        <section class="section-nav">
+            <div class="nav-container nav-grid-x">
+                <a class="navbar-link" href="index.html">HOME</a>
+                <a class="navbar-link" href="products.html">PRODUCTS</a>
+                <a>
+                    <img src="image/StarbucksLogo.svg" alt="logo">
+                </a>
+                <a class="navbar-link" href="about.html">ABOUT</a>
+                <a class="navbar-link" id="contact" href="contact.html">CONTACT</a>
+            </div>
+            <div class="video-container title-grid-x">
+                <div class="title contact"><h1>CONTACT</h1></div>
+                <div class="video-color-overlay"></div>
+                <video autoplay loop muted>
+                    <source src="./video/videoForContact.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section>
+            <div class="slogan-whole-part">
+                <div class="slogan-grid-x">
+                    <h2 class="slogan-head">TASTING YOUR COFFEE</h2>
+                    <p class="slogan-body">There’s an art to slowing down and truly tasting your coffee, from its aroma and acidity to its body and flavour. Here’s how to master it.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="frequent_quetions_part">
+                <h1 class="frequent_quetions_title">Frequently Asked Questions</h1>
+                <div class="question1">
+                    <span>
+                        <p class="frequent_quetion">ARE STARBUCKS® COFFEE ENHANCER PACKAGING RECYCLABLE ?</p>
+                        <!-- <button onclick="toggleAnswer(1)" id="button1">+</button> -->
+                        <button onclick="toggleAnswer(1)" id="button1"><img src="image/icons8-hot-chocolate.gif" alt="coffee"></button>
+
+                    </span>
+                    <div id="answer1" class="answer">
+                        <p class="frequent_answer">Yes, the Starbucks® Coffee Enhancer packaging is recyclable! Simply place the bottle in your recycling bin after removing the sleeve.</p>
+                        <p class="frequent_answer">For Alberta residents, please do not remove the sleeve when recycling. Starbucks® Coffee Enhancers can be returned to your local bottle depot for a refund.</p>
+                    </div>
+                    <hr class="line">
+                </div>
+                <div class="question2">
+                    <span>
+                        <p class="frequent_quetion">WHERE CAN I BUY STARBUCKS® COFFEE ENHANCERS?</p>
+                        <!-- <button onclick="toggleAnswer(2)">+</button> -->
+                        <button onclick="toggleAnswer(2)" id="button2"><img src="image/icons8-hot-chocolate.gif" alt="coffee"></button>
+                    </span>
+                    <div id="answer2" class="answer">
+                        <p class="frequent_answer">They are available for purchase at your local grocery store in the refrigerated dairy section.</p>
+                    </div>
+                    <hr class="line">
+                </div>
+                <div class="question3">
+                    <span>
+                        <p class="frequent_quetion">WHAT IS THE SHELF LIFE OF STARBUCKS® COFFEE ENHANCERS?</p>
+                        <!-- <button onclick="toggleAnswer(3)">+</button> -->
+                        <button onclick="toggleAnswer(3)" id="button3"><img src="image/icons8-hot-chocolate.gif" alt="coffee"></button>
+                    </span>
+                    <div id="answer3" class="answer">
+                        <p class="frequent_answer">Starbucks® Coffee Enhancers should be used within 14 days after opening or before the use-by date, whichever comes first. The shelf life can vary due to packaging materials and manufacturing locations.</p>
+                        <p class="frequent_answer">Shake Before Use. Do Not Freeze. Keep Refrigerated. Store Between 33°F and 45°F. For Best Quality, use within 14 Days of Opening.</p>
+                    </div>
+                    <hr class="line">
+                </div>
+                <div class="question4">
+                    <span>
+                        <p class="frequent_quetion">WHERE ARE STARBUCKS® COFFEE ENHANCERS MANUFACTURED?</p>
+                        <!-- <button onclick="toggleAnswer(4)">+</button> -->
+                        <button onclick="toggleAnswer(4)" id="button4"><img src="image/icons8-hot-chocolate.gif" alt="coffee"></button>
+                    </span>
+                    <div id="answer4" class="answer">
+                        <p class="frequent_answer">Starbucks® Coffee Enhancers are proudly prepared in Toronto, Canada!</p>
+                    </div>
+                    <hr class="line">
+                </div>
+                <div class="question5">
+                    <span>
+                        <p class="frequent_quetion">ARE STARBUCKS® COFFEE ENHANCERS MADE WITH ARTIFICIAL COLOURS OR FLAVOURS?</p>
+                        <!-- <button onclick="toggleAnswer(5)">+</button> -->
+                        <button onclick="toggleAnswer(5)" id="button5"><img src="image/icons8-hot-chocolate.gif" alt="coffee"></button>
+                    </span>
+                    <div id="answer5" class="answer">
+                        <p class="frequent_answer">No, Starbucks® Coffee Enhancers are made with no artificial colours, flavours or sweeteners.</p>
+                    </div>
+                    <hr class="line">
+                </div>
+            </div>
+        </section>
+        <section class="form_section">
+            <div class="contact_us">Contact Us</div>
+            <div class="form">
+                <form action="">
+                    <label class="form-title" for="fname">FIRST NAME</label>
+                    <input class="form-input" type="text" id="fname" name="firstname" required>
+                
+                    <label class="form-title" for="lname">LAST NAME</label>
+                    <input class="form-input" type="text" id="lname" name="lastname" required>
+
+                    <label class="form-title" for="email">EMAIL ADDRESS</label>
+                    <input class="form-input" type="email" id="email" name="email" required>
+                
+                    <label class="form-title" for="message">MESSAGE</label>
+                    <textarea id="message" name="subject" style="height:200px"></textarea>
+                    <button class="submit" type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <section class="socialmedia-section">
+            <div class="socialmedia-xlogo">
+                <a href="https://twitter.com/starbuckscanada">
+                    <img class="xlogo" src="image/twitter_x_icon.png" alt="twitter_x">
+                </a>
+            </div>
+            <div class="socialmedia-instalogo">
+                <a href="https://www.instagram.com/starbuckscanada/">
+                    <img class="instalogo" src="image/instagram_logo.png" alt="instagram">
+                </a>
+            </div>
+            <div class="socialmedia-facebooklogo">
+                <a href="https://www.facebook.com/starbuckscanada">
+                    <img class="facebooklogo" src="image/facebook_logo.png" alt="facebook">
+                </a>
+            </div>
+        </section>
+        <section class="footer-grid-x">
+            <div class="footer-container">
+                <h3>STARBUCKS<sup>&#174</sup> COFFEE BEANS</h3>
+                <ul>
+                    <li><a href="#">COOKIE NOTICE</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">TERM OF USE</a></li>
+                    <li><a href="#">STARBUCKS.CA</a></li>
+                </ul> 
+                <P>
+					Nestlé uses Starbucks trademarks under license. Nespresso<sup>&#174</sup> and Vertuo<sup>&#174</sup> trademarks are owned by Société des Produits Nestlé S.A., Vevey, Switzerland and used under license. Pike Place is a registered trademark of The Pike Place Market PDA, used under license.                                
+                </P>
+            </div>
+        </section>
+        <script>
+            /*navbar change*/
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    var scroll = $(window).scrollTop();
+                    if (scroll > 100) {
+                      $(".nav-container").css("background" , "#8d7e7a7a");
+                      $(".navbar-link").css("color" , "#38241e");
+                      $("#contact").css("color", "#6cffd8");
+                    }
+              
+                    else{
+                        $(".nav-container").css("background" , "#8d7e7a");
+                        $("a[href]").css("color" , "#cacaca");
+                        $("#contact").css("color", "#6cffd8");  	
+                    }
+                })
+              })
+              
+              function toggleAnswer(questionNumber) {
+      var answerId = "answer" + questionNumber;
+      var answer = document.getElementById(answerId);
+      var button = document.getElementById("button" + questionNumber);
+
+      if (answer.style.display === 'none' || answer.style.display === '') {
+        answer.style.display = 'block';
+        answer.style.opacity = '1'; /* 追加 */
+        button.classList.add("rotate"); /* 追加 */
+      } else {
+        answer.style.display = 'none';
+        answer.style.opacity = '0'; /* 追加 */
+        button.classList.remove("rotate"); /* 追加 */
+      }
+    }
+
+          </script>
+    </body>
+</html>

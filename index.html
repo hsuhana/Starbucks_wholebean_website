@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>STARBUCKS</title>
+		<meta name="author" content="Kaori Kumura, Fang Ting HSU" />
+		<meta name="description" content="A website for selling coffee beans">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="image/StarbucksLogo.svg" type="image/svg" sizes="10x10"/>
+		<link rel="stylesheet" href="css/style.css" />
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sumana:wght@700&display=swap" rel="stylesheet">
+	</head>
+    <body>
+        <div class="loader-container">
+
+                <div class="animateLeft"><img src="image/open_top.png" alt="open image top"/></div>
+                <div class="animateRight"><img src="image/open_bottom.png" alt="open image bottom"/></div>
+                <div class="middleLogo"><img src="image/StarbucksLogo.svg" alt="starbucks logo"/></div>
+
+        </div>
+        <main class="mainContent">
+        <section class="section-nav">
+            <div class="nav-container nav-grid-x">
+                <a class="navbar-link" id="home" href="index.html">HOME</a>
+                <a class="navbar-link" href="products.html">PRODUCTS</a>
+                <a>
+                    <img src="image/StarbucksLogo.svg" alt="logo">
+                </a>
+                <a class="navbar-link" href="about.html">ABOUT</a>
+                <a class="navbar-link" href="contact.html">CONTACT</a>
+            </div>
+            <div class="video-container title-grid-x">
+                <div class="title index"><h1>STARBUCKS</h1></div>
+                <div class="video-color-overlay"></div>
+                <video autoplay loop muted>
+                    <source src="./video/videoForHome.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section>
+            <div class="slogan-whole-part">
+                <div class="slogan-grid-x">
+                    <h2 class="slogan-head">MORE ABOUT THE COFFEE</h2>
+                    <p class="slogan-body">This is a coffee of one true love, and three names. We created it for a Seattle restaurant in 1975, as Jake’s Blend. People loved it so much we began scooping it in our stores as 80/20 Blend, after the recipe. The love was so strong we finally made it official, calling it Verona after the city that inspires so many.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="slideshow-whole-part">
+                <div class="slideshow-grid-x">
+                    <div class="slideshow-container animate">
+                        <div class="image-container"><img src="image/newsImage1.jpg" alt="newsImage1"></div>
+                    </div>
+                    <div class="slideshow-container animate">
+                        <div class="image-container"><img src="image/newsImage2.jpg" alt="newsImage2"></div>
+                    </div>
+                    <div class="slideshow-container animate">
+                        <div class="image-container"><img src="image/newsImage3.jpg" alt="newsImage3"></div>
+                    </div>
+                    <div class="button-container">
+                        <button onclick="plusDivs(-1)">&#10094</button>
+                        <button onclick="plusDivs(+1)">&#10095</button>
+                    </div>
+                    <div class="text-container">
+                        <div class="slideshow-title"><h2>ROAST SPECTRUM</h2></div>
+                        <div class="slideshow-content"><p>From our home to yours, <br> include in our Starbucks<sup>&#174</sup> at Home products and recipes.</p></div>
+                    </div>
+                    <div class="text-container animate">
+                        <div class="slideshow-title"><h2>BRING HOME FESTIVE JOY</h2></div>
+                        <div class="slideshow-content"><p>Discover the different coffee and flavour <br> profiles within our Starbucks<sup>&#174</sup> Roast Spectrum, <br> with 3 roast categories to explore, find your <br> perfect coffee</p></div>
+                    </div>
+                    <div class="text-container">
+                        <div class="slideshow-title"><h2>NEW LOOK, <br> SAME STARBUCKS<sup>&#174</sup> <br> YOU LOVE</h2></div>
+                        <div class="slideshow-content"><p>Explore the range to find your favorite <br> roast, blend of flavour</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-preview-grid-x">
+            <div class="about-preview-container animateForAboutPreview">
+                <div class="about-preview-image"><img src="image/view7.jpg" alt="starbucks old building"></div>
+                <div class="about-preview-image"><img src="image/view8.jpeg" alt="starbucks pink building"></div>
+                <div class="about-preview-image"><img src="image/view9.jpeg" alt="starbucks beach building"></div>
+                <div class="about-preview-image"><img src="image/view10.jpeg" alt="starbucks night building"></div>
+                <div class="about-preview-text">
+                    <h2>ABOUT US</h2>
+                    <P>Discover what makes Starbucks<sup>&#174</sup> unique, from our commitment to human connection and quality coffee, to our welcoming coffeehouses, and delicious coffees you can enjoy at home.</P>
+                    <button type="button" onclick="location.href='./about.html'">READ MORE</button>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe-grid-x">
+            <div class="subscribe-background-image">
+                <div class="subscribe-form-grid-x">
+                    <div class="subscribe-form-continer">
+                        <h2>GET UPDATE AND SPECIAL OFFER FROM STARBUCKS</h2>
+                        <form>
+                            <div>
+                                <input type="email" placeholder="Please type your email"/>
+                            </div>
+                            <div>
+                                <button class="subscribeButton" type="button">SUBSCRIBE</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-grid-x">
+            <div class="footer-container">
+                <h3>STARBUCKS<sup>&#174</sup> COFFEE BEANS</h3>
+                <ul>
+                    <li><a href="#">COOKIE NOTICE</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">TERM OF USE</a></li>
+                    <li><a href="#">STARBUCKS.CA</a></li>
+                </ul> 
+                <P>
+					Nestlé uses Starbucks trademarks under license. Nespresso<sup>&#174</sup> and Vertuo<sup>&#174</sup> trademarks are owned by Société des Produits Nestlé S.A., Vevey, Switzerland and used under license. Pike Place is a registered trademark of The Pike Place Market PDA, used under license.                                
+                </P>
+            </div>
+        </section>
+        </main>
+        <script>
+            /*slideshow*/
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            var slideTextIndex = 1;
+            showTextDivs(slideTextIndex);
+
+            var indicator = 0;
+
+            function plusDivs(n) {
+            
+            indicator = n;    
+            showDivs(slideIndex += n);
+            showTextDivs(slideTextIndex += n);
+            console.log(slideIndex);
+            console.log(slideTextIndex);
+            }
+
+            function showDivs(n) {
+            var i;
+            var slides = document.getElementsByClassName("slideshow-container");
+            var animation = document.getElementsByClassName("animate");
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (i = 0; i < animation.length; i++) {
+                animation[i].style.animationName = "none";
+            }
+
+            if(indicator == +1){
+                animation[slideIndex - 1].style.animationName = "leftmove";
+            }
+
+            if(indicator == -1){
+                animation[slideIndex - 1].style.animationName = "rightmove";
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+            }
+
+            function showTextDivs(n) {
+                var i;
+                var slidesText = document.getElementsByClassName("text-container");
+                if (n > slidesText.length) {
+                    slideTextIndex = 1;
+                }
+                if (n < 1) {
+                    slideTextIndex = slidesText.length;
+                }
+                for (i = 0; i < slidesText.length; i++) {
+                    slidesText[i].style.display = "none";
+                }
+                slidesText[slideTextIndex - 1].style.display = "block";
+                }
+            
+            /*navbar change*/
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    var scroll = $(window).scrollTop();
+                    if (scroll > 100) {
+                      $(".nav-container").css("background" , "#8d7e7a7a");
+                      $(".navbar-link").css("color" , "#38241e");
+                      $("#home").css("color", "#6cffd8");
+                    }
+              
+                    else{
+                        $(".nav-container").css("background" , "#8d7e7a");
+                        $("a[href]").css("color" , "#cacaca");
+                        $("#home").css("color", "#6cffd8");  	
+                    }
+                })
+              })
+            
+            /*about preview auto slideshow*/
+            var slideNum = 0;
+            aboutPreview();
+
+            function aboutPreview() {
+                var i;
+                var slides = document.getElementsByClassName("about-preview-image");
+
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideNum++;
+                if (slideNum > slides.length) {slideNum = 1}    
+
+                slides[slideNum-1].style.display = "block";  
+
+                setTimeout(aboutPreview, 2000); // Change image every 2 seconds
+            }
+
+            /*subscribe click function*/
+            var subscribe = document.querySelector("button.subscribeButton");
+            subscribe.addEventListener('click',function(){
+               alert('THANK YOU FOR SUBSCRIBING'); 
+            })
+
+            /*loading animation*/
+            window.addEventListener('DOMContentLoaded', () => {
+                const main = document.querySelector('.mainContent');
+                const loaderContainer = document.querySelector('.loader-container');
+                setTimeout(() => {
+                    main.style.display = 'block'
+                    loaderContainer.style.display = 'none';
+                }, 4000);
+            });
+        </script>
+    </body>
+</html>
